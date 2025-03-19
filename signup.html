@@ -1,0 +1,87 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Sign Up
+  </title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-image: url("login1.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    .error-messages {
+    color: red;
+    margin-bottom: 10px;
+}
+    </style> 
+    <link rel="stylesheet" href="response.css">
+
+</head>
+ <body class="flex flex-col items-center justify-center min-h-screen bg-black-900 bg-opacity-10">
+  <div class="w-full max-w-md p-8 bg-white bg-opacity-10 rounded-lg shadow-lg">
+
+   <h2 class="text-2xl font-bold text-center mb-6">
+    Sign up
+   </h2>
+   <form method="post" action="register.php">
+    <div class="mb-4">
+     <label class="block text-sm font-medium text-black-700" for="name">
+      Name
+     </label>
+     <input class="mt-1 block w-full px-3 py-2 border border-black  bg-transparent rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm " id="name" name="name" type="text" required/>
+    </div>
+    <div class="mb-4">
+     <label class="block text-sm font-medium text-black" for="email">
+      Email
+     </label>
+     <div class="relative mt-1">
+      <input class="block w-full px-3 py-2 border border-black bg-transparent rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" id="email" name="email" type="email" required/>
+      <span class="absolute inset-y-0 right-0 pr-3 flex items-center text-black-500">
+       <i class="fas fa-eye">
+       </i>
+      </span>
+     </div>
+    </div>
+    <div class="mb-6">
+     <label class="block text-sm font-medium text-black" for="password">
+      Password
+     </label>
+     <input class="mt-1 block w-full px-3 py-2 border border-black bg-transparent rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" id="password" name="password" type="password" required/>
+    </div>
+    <div class="mb-6">
+      <label class="block text-sm font-medium text-black" for="password_confirmation">
+       Confirm Password
+      </label>
+      <input class="mt-1 block w-full px-3 py-2 border border-black bg-transparent rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" id="password_confirmation" name="password_confirmation" type="password" required/>
+     </div>
+    <button class="w-full bg-gray-900 text-black bg-opacity-10 py-2 rounded-md text-sm font-medium hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500" type="submit">
+     Sign Up
+    </button>
+   </form>
+   <p class="mt-4 text-center text-sm text-black-600">
+    Already have an account?
+    <a class="text-blue-500 hover:underline" href="login.html">
+     Login
+    </a>
+   </p>
+   <div class="mt-6 flex items-center justify-center">
+    <div class="border-t border-black-300 w-full">
+    </div>
+    <span class="px-2 text-sm text-black-500">
+     or
+    </span>
+    <div class="border-t border-black-300 w-full">
+    </div>
+   </div>
+   <button class="mt-6 w-full flex items-center justify-center border border-black-300 py-2 rounded-md text-sm font-medium text-black-700 hover:bg-black-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black-500">
+    <img alt="Google logo" class="w-5 h-5 mr-2" height="20" src="google_image.jpg" width="20"/>
+    Sign up with Google
+   </button>
+  </div>
+ </body>
+</html>

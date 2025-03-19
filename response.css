@@ -1,0 +1,84 @@
+/* Make the entire website responsive */
+
+/* Ensure the website scales properly on all devices */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* Ensure images and videos are responsive */
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Responsive container for better spacing */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Flexbox for better alignment */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Navigation bar */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: peachpuff;
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav .menu {
+    display: flex;
+}
+
+/* Responsive navigation */
+@media (max-width: 768px) {
+    nav .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #333;
+    }
+
+    nav .menu.show {
+        display: flex;
+    }
+
+    nav .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/* Make text content readable on smaller screens */
+body {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Ensure sections stack on smaller screens */
+@media (max-width: 768px) {
+    .flex {
+        flex-direction: column;
+    }
+}

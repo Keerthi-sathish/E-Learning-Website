@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <title>Home page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=PT+Sans+Narrow:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="response.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <div class="website-name">
+                <i class="fas fa-graduation-cap fa-2x"></i>
+                <span class="lmc-text">LMC</span><br>
+                <span class="small-text">Last Minute Course</span>
+            </div>
+        </div>            
+        
+        <nav class="navbar">
+            &nbsp;
+            <a href="homepage.html" class="active">Home</a>&nbsp;&nbsp;&nbsp;
+            <a href="#services">Services</a>&nbsp;&nbsp;&nbsp;
+            <a href="#about">About</a>&nbsp;&nbsp;&nbsp;
+            <a href="courses.php">Courses</a>&nbsp;&nbsp;&nbsp;
+            <a href="#testimonials">Feedback</a>&nbsp;&nbsp;&nbsp;
+            <a href="#contact">Contact</a>&nbsp;&nbsp;&nbsp;
+            <a href="logout.php">Logout</a>&nbsp;&nbsp;&nbsp;
+
+        </nav>
+    </header>
+
+    <div class="background-image">
+        <div class="text">
+            <h1>Start Your Learning Journey Today at LMC </h1>
+            <button class="btn" ><a style="color: black;"href="login.html">Get Started</a></button>
+           
+        </div>
+    </div>
+
+    <h2>Services</h2>
+    <section id="services" class="services-section">
+        <div class="card">
+            <i class="fas fa-headset"></i>
+            <h3>24/7 Support</h3>
+            <p>We provide round-the-clock assistance to ensure your issues are resolved anytime.</p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-laptop"></i>
+            <h3>Device Accessibility</h3>
+            <p>Access our services seamlessly across all your devices.</p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-graduation-cap"></i>
+            <h3>Free Courses</h3>
+            <p>Enroll in a variety of free courses to enhance your skills.</p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-cloud-upload-alt"></i>
+            <h3>Content Delivery</h3>
+            <p>Fast and reliable content delivery for all your needs.</p>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>Welcome to LMC! We are a passionate team dedicated to building innovative solutions with cutting-edge
+                    technologies. Our goal is to deliver exceptional user experiences and make a meaningful impact in
+                    the world.</p>
+                    <a href="about.html"><button class="about-btn">Learn More</button></a>
+                    
+            </div>
+            <div class="about-image">
+                <img src="about image.jpg" alt="About Us">
+            </div>
+        </div>
+    </section>
+
+    <h2>Popular Courses</h2>
+<section id="courses" class="course-section">
+    <div class="course-card">
+        <div class="course-icon">
+            <img src="php coursecover.jpg" alt="PHP Icon">
+        </div>
+        <h3 class="course-title">SQL for Beginners</h3>
+        <p class="course-description">Learn PHP from scratch, covering basic syntax to advanced topics.</p>
+        <a href="courses.php?course_id=7" class="view-btn">Learn</a>
+    </div>
+
+    <div class="course-card">
+        <div class="course-icon">
+            <img src="python course cover.jpg" alt="Python Icon">
+        </div>
+        <h3 class="course-title">Python for Data Science</h3>
+        <p class="course-description">Master Python with libraries for data analysis, machine learning, and more.</p>
+        <a href="courses.php?course_id=1" class="view-btn">Learn</a>
+    </div>
+
+    <div class="course-card">
+        <div class="course-icon">
+            <img src="html css cover.jpg" alt="HTML & CSS Icon">
+        </div>
+        <h3 class="course-title">HTML & CSS Basics</h3>
+        <p class="course-description">Learn web design by mastering HTML and CSS to create responsive websites.</p>
+        <a href="courses.php?course_id=2" class="view-btn" >Learn</a>
+    </div>
+
+    <button class="course-button" ><a href="courses.php" style="color: white;">View More</a></button>
+</section>
+
+
+    <section id ="testimonials" class="testimonials-secton">
+        <h2 class="section-title">What Our Learners Say</h2>
+
+        <div class="testimonial-card">
+            <div class="testimonial-icon">
+                <img src="user2.jpg" alt="User Icon">
+            </div>
+            <h3 class="testimonial-name">John Doe</h3>
+            <p class="testimonial-text">"The PHP course was fantastic! It helped me build a strong foundation in web
+                development, and the exercises were really engaging."</p>
+            <p class="testimonial-rating">Rating: ⭐⭐⭐⭐⭐</p>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="testimonial-icon">
+                <img src="user1.jpg" alt="User Icon">
+            </div>
+            <h3 class="testimonial-name">Jane Smith</h3>
+            <p class="testimonial-text">"I absolutely loved the Python for Data Science course! The projects helped me
+                apply what I learned in real-world scenarios."</p>
+            <p class="testimonial-rating">Rating: ⭐⭐⭐⭐⭐</p>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="testimonial-icon">
+                <img src="user3.jpg" alt="User Icon">
+            </div>
+            <h3 class="testimonial-name">Emily Brown</h3>
+            <p class="testimonial-text">"The HTML & CSS Basics course was a great starting point. I was able to create
+                my first website within a few weeks!"</p>
+            <p class="testimonial-rating">Rating: ⭐⭐⭐⭐⭐</p>
+        </div>
+
+        <button class="feedback-button" style="background-color: peachpuff"><a style="color: black;"href="feedback.php">Give Feedback</a></button>
+    </section>
+
+<section id="contact" class="footer">
+    <footer>
+        <div class="box-container">
+            <div class="box1">
+                <h3>About Us</h3>
+                <p>At LMC, we are dedicated to providing top-quality courses and services to help you grow in your
+                    career. Our mission is to inspire and empower learners worldwide.</p>
+            </div>
+
+            <div class="box2">
+                <h3>Quick Links</h3>
+                <a href="homepage.html">Home</a>
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="#courses">Courses</a>
+                <a href="#testimonials">Feedback</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="box3">
+                <h3>Keep in Touch</h3>
+                <p><strong>Phone:</strong> +91 9988776655</p>
+                <p><strong>Email:</strong> learning@lmc.com</p>
+                <p><strong>Address:</strong> Learning Center,Pune,Maharashtra</p>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <h1 class="copyright"> &copy; All rights reserved!</h1>
+    </footer>
+</section>
+</body>
+</html>
